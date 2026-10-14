@@ -1,0 +1,10 @@
+~ start
+Nadip: Apa kamu udah makan?
+- Belum
+	Nadip: Makan yuk mumpung istirahat
+- Mau ke kantin
+	Nadip: Tak temenin sini
+- Udah
+	Nadip: Yah padahal mau tak ajak
+
+=> END

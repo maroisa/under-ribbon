@@ -1,0 +1,194 @@
+[gd_scene format=3 uid="uid://bj3q781md30en"]
+
+[ext_resource type="Script" uid="uid://duis030xvuoa3" path="res://scenes/main_menu.gd" id="1_ekxnf"]
+[ext_resource type="Texture2D" uid="uid://da7p5ydg5r04n" path="res://assets/splash.svg" id="1_l6cm7"]
+[ext_resource type="Texture2D" uid="uid://whuyhwelbit5" path="res://assets/class_color.webp" id="2_bqqt6"]
+
+[sub_resource type="Animation" id="Animation_ekxnf"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BG/C/SplashTexture:offset_transform_position_ratio:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BG/C/VB:offset_transform_position_ratio:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(2, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_l6cm7"]
+resource_name = "splash"
+length = 2.5000000000000004
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BG/C/SplashTexture:offset_transform_position_ratio:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 3, 0),
+"points": PackedFloat32Array(1, 0, 0, 0.25, 0, 0, -0.5, 0, 0.5, 0, -1, 0, 0.25, 0, 0),
+"times": PackedFloat32Array(0, 1, 2)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BG/C/VB:offset_transform_position_ratio:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2),
+"points": PackedFloat32Array(2, -0.25, 0, 0.25, 0, 2, 0, 0, 0, 0, 0, -0.5, 0, 0, 0),
+"times": PackedFloat32Array(0, 1.5000001, 2.5000002)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ekxnf"]
+_data = {
+&"RESET": SubResource("Animation_ekxnf"),
+&"splash": SubResource("Animation_l6cm7")
+}
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l6cm7"]
+bg_color = Color(0.9764706, 0.94509804, 0.9411765, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(0.9764706, 0.8392157, 0.8235294, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ekxnf"]
+bg_color = Color(0.9764706, 0.8392157, 0.8235294, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(0.9764706, 0.8392157, 0.8235294, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bqqt6"]
+bg_color = Color(0.9764706, 0.94509804, 0.9411765, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(0.9764706, 0.8392157, 0.8235294, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 1
+
+[node name="MainMenu" type="Control" unique_id=1403314900]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ekxnf")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1182392480]
+libraries/ = SubResource("AnimationLibrary_ekxnf")
+autoplay = &"splash"
+
+[node name="BG" type="TextureRect" parent="." unique_id=1854608319]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_bqqt6")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="C" type="CenterContainer" parent="BG" unique_id=1489509716]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="VB" type="VBoxContainer" parent="BG/C" unique_id=1957548478]
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position_ratio = Vector2(0, 2)
+mouse_filter = 2
+theme_override_constants/separation = 32
+
+[node name="PlayButton" type="Button" parent="BG/C/VB" unique_id=1304494685]
+custom_minimum_size = Vector2(320, 80)
+layout_mode = 2
+offset_transform_enabled = true
+theme_override_colors/font_color = Color(0.5568628, 0.34901962, 0.32941177, 1)
+theme_override_colors/font_focus_color = Color(0.5568628, 0.34901962, 0.32941177, 1)
+theme_override_colors/font_pressed_color = Color(0.5568628, 0.34901962, 0.32941177, 1)
+theme_override_colors/font_hover_color = Color(0.5568628, 0.34901962, 0.32941177, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.5568628, 0.34901962, 0.32941177, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_l6cm7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ekxnf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bqqt6")
+text = "Play"
+
+[node name="SettingButton" type="Button" parent="BG/C/VB" unique_id=721235526]
+custom_minimum_size = Vector2(320, 80)
+layout_mode = 2
+offset_transform_enabled = true
+theme_override_colors/font_color = Color(0.5568628, 0.34901962, 0.32941177, 1)
+theme_override_colors/font_focus_color = Color(0.5568628, 0.34901962, 0.32941177, 1)
+theme_override_colors/font_pressed_color = Color(0.5568628, 0.34901962, 0.32941177, 1)
+theme_override_colors/font_hover_color = Color(0.5568628, 0.34901962, 0.32941177, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.5568628, 0.34901962, 0.32941177, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_l6cm7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ekxnf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bqqt6")
+text = "Setting"
+
+[node name="ExitButton" type="Button" parent="BG/C/VB" unique_id=1547643516]
+custom_minimum_size = Vector2(320, 80)
+layout_mode = 2
+offset_transform_enabled = true
+theme_override_colors/font_color = Color(0.5568628, 0.34901962, 0.32941177, 1)
+theme_override_colors/font_focus_color = Color(0.5568628, 0.34901962, 0.32941177, 1)
+theme_override_colors/font_pressed_color = Color(0.5568628, 0.34901962, 0.32941177, 1)
+theme_override_colors/font_hover_color = Color(0.5568628, 0.34901962, 0.32941177, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.5568628, 0.34901962, 0.32941177, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_l6cm7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ekxnf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bqqt6")
+text = "Exit"
+
+[node name="SplashTexture" type="TextureRect" parent="BG/C" unique_id=462509440]
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position_ratio = Vector2(0, 1)
+mouse_filter = 2
+texture = ExtResource("1_l6cm7")
+stretch_mode = 3
