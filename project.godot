@@ -19,6 +19,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 DialogueManager="*uid://c3rodes2l3gxb"
+Transitioner="*uid://bipid85h6dg61"
+BG="*uid://bq8osynrxc1ln"
 
 [dialogue_manager]
 

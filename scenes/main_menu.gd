@@ -19,7 +19,7 @@ func _ready() -> void:
 		$BG/M/SettingsTab.show())
 	
 	$BG/M/MainTab/C/VB/StartButton.pressed.connect(func():
-		get_tree().change_scene_to_file("res://scenes/world.tscn"))
+		Transitioner.fade_to("res://scenes/scene1.tscn"))
 	
 	$BG/M/SettingsTab/BackButton.pressed.connect(func():
 		$BG/M/MainTab.show()
