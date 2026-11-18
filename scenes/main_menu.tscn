@@ -1,0 +1,137 @@
+[gd_scene format=3 uid="uid://bj3q781md30en"]
+
+[ext_resource type="Script" uid="uid://duis030xvuoa3" path="res://scenes/main_menu.gd" id="1_ekxnf"]
+[ext_resource type="Texture2D" uid="uid://t5t0coswx54h" path="res://assets/backgrounds/class.jpg" id="1_l6cm7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l6cm7"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l6cm7"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0, 0, 0, 0.39215687)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ekxnf"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0, 0, 0, 0.19607843)
+
+[node name="MainMenu" type="Control" unique_id=1878629168]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ekxnf")
+
+[node name="BG" type="TextureRect" parent="." unique_id=1109852245]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_l6cm7")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="M" type="MarginContainer" parent="BG" unique_id=482421203]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 150
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 150
+theme_override_constants/margin_bottom = 50
+
+[node name="MainTab" type="VBoxContainer" parent="BG/M" unique_id=1349869048]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="TitleLabel" type="Label" parent="BG/M/MainTab" unique_id=322985590]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 60
+text = "UNDER RIBBON"
+
+[node name="C" type="CenterContainer" parent="BG/M/MainTab" unique_id=1483370658]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 3
+
+[node name="VB" type="VBoxContainer" parent="BG/M/MainTab/C" unique_id=1010204081]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 3
+
+[node name="StartButton" type="Button" parent="BG/M/MainTab/C/VB" unique_id=433427300]
+custom_minimum_size = Vector2(160, 48)
+layout_mode = 2
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxEmpty_l6cm7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_l6cm7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ekxnf")
+text = "START"
+alignment = 0
+
+[node name="SettingButton" type="Button" parent="BG/M/MainTab/C/VB" unique_id=1989611896]
+custom_minimum_size = Vector2(160, 48)
+layout_mode = 2
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxEmpty_l6cm7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_l6cm7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ekxnf")
+text = "SETTINGS"
+alignment = 0
+
+[node name="ExitButton" type="Button" parent="BG/M/MainTab/C/VB" unique_id=1199903267]
+custom_minimum_size = Vector2(160, 48)
+layout_mode = 2
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxEmpty_l6cm7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_l6cm7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ekxnf")
+text = "EXIT"
+alignment = 0
+
+[node name="SettingsTab" type="VBoxContainer" parent="BG/M" unique_id=12176752]
+visible = false
+layout_mode = 2
+
+[node name="BackButton" type="Button" parent="BG/M/SettingsTab" unique_id=1318298081]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_constants/outline_size = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_l6cm7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_l6cm7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ekxnf")
+text = "< Kembali"
+alignment = 0
+
+[node name="Fullscreen" type="HBoxContainer" parent="BG/M/SettingsTab" unique_id=740771572]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="BG/M/SettingsTab/Fullscreen" unique_id=958189889]
+custom_minimum_size = Vector2(256, 0)
+layout_mode = 2
+text = "Fullscreen"
+
+[node name="CheckButton" type="CheckButton" parent="BG/M/SettingsTab/Fullscreen" unique_id=729244528]
+layout_mode = 2
