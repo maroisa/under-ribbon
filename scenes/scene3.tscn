@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://crf4a57a8rjf1"]
+
+[ext_resource type="Script" uid="uid://c54dsmk10krr4" path="res://scenes/scene3.gd" id="1_rvng1"]
+[ext_resource type="Texture2D" uid="uid://t5t0coswx54h" path="res://assets/backgrounds/class.jpg" id="2_0tukl"]
+
+[node name="Scene3" type="CanvasLayer" unique_id=159565786]
+layer = 3
+script = ExtResource("1_rvng1")
+
+[node name="BG" type="TextureRect" parent="." unique_id=296506538]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_0tukl")
+expand_mode = 2
+stretch_mode = 4
+
+[node name="Overlay" type="ColorRect" parent="." unique_id=1155005748]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.19607843)
+
+[node name="C" type="CenterContainer" parent="Overlay" unique_id=1371456610]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="LineEdit" type="LineEdit" parent="Overlay/C" unique_id=937786034]
+custom_minimum_size = Vector2(320, 64)
+layout_mode = 2
+placeholder_text = "Namamu"
+alignment = 1
+max_length = 32

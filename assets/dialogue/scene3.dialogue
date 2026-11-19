@@ -1,0 +1,18 @@
+~ start
+do change_bg(BG.CLASS)
+
+Gadis di sebelahmu berdiri dengan anggun. Rambut panjangnya terayun lembut saat ia melangkah menuju depan papan tulis.
+
+Dengan suara yang jernih dan tenang, ia memperkenalkan dirinya, menceritakan kegemarannya membaca buku serta harapannya untuk bisa menjalin pertemanan yang baik di kelas ini.
+
+Tak berapa lama kemudian, giliranmu yang dipanggil. Di bawah tatapan puluhan pasang mata murid baru lainnya, kamu menyampaikan perkenalan dirimu dengan lancar.
+
+do show_modal()
+"{{GameManager.username}}"
+
+Begitu semua murid selesai memperkenalkan diri, wali kelas merapikan tumpukan kertas di mejanya dan tersenyum melihat ke arah seluruh isi ruangan.
+
+"Baiklah, karena kalian sudah saling mengenal dan posisi duduk hari ini sudah tertata, maka denah bangku ini resmi menjadi posisi duduk kalian selama satu semester ke depan."
+
+do end()
+=> END

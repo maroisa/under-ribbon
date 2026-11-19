@@ -24,7 +24,7 @@ Jantungmu berdegup sedikit lebih cepat ketika menyadari betapa dekatnya posisi d
 	do change_bg(BG.SMILING)
 	Memberanikan diri, kamu membuang rasa gugup dan melontarkan sapaan ramah pada gadis berambut panjang di sebelahmu. 
 	Ketika [b]kamu menyapa dia, dia tersenyum melihatmu[/b] dengan kehangatan yang seketika mencairkan suasana canggung di antara kalian. Ia menghentikan kegiatannya merapikan alat tulis, lalu menoleh penuh ke arahmu.
-	"Hai juga! Aku Alya," jawabnya manis dengan binar mata yang ramah.
+	Alya: "Hai juga! Aku Alya," jawabnya manis dengan binar mata yang ramah.
 
 - Diam Saja
 	Kamu memilih untuk diam saja. Tanpa mampu berkata-kata, kamu terdiam terpesona olehnya, terpaku sejenak memandangi parasnya yang begitu anggun disiram cahaya pagi.
@@ -39,4 +39,5 @@ Bel sekolah berbunyi nyaring memecah suasana, menandakan jam pelajaran pertama r
 Seluruh murid, termasuk kamu dan gadis berambut panjang di sebelahmu, seketika mengalihkan perhatian penuh ke depan papan tulis.
 
 "Selamat pagi semuanya. Selamat datang di kelas baru kalian," sapa guru tersebut dengan suara yang hangat dan tenang. "Sebelum kita mulai melangkah ke materi pelajaran, mari kita saling mengenal terlebih dahulu. Setiap dari kalian akan maju satu per satu ke depan untuk memperkenalkan diri."
+do end()
 => END

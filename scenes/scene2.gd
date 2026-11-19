@@ -21,3 +21,4 @@ func _ready() -> void:
 		
 		await get_tree().create_timer(1).timeout
 	
+	Transitioner.fade_to("res://scenes/scene3.tscn")
