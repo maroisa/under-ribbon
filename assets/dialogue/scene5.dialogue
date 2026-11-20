@@ -1,0 +1,7 @@
+~ start
+do change_bg(BG.CLASS)
+
+Suara bel elektronik bernada lembut bergema di seluruh penjuru koridor dan kafetaria. Semua murid mulai bergegas kembali ke ruang kelas masing-masing.
+
+do end()
+=> END

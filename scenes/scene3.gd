@@ -19,4 +19,4 @@ func submit_modal(new_text: String):
 	$Overlay.hide()
 
 func end():
-	pass
+	Transitioner.fade_to("res://scenes/scene4.tscn")

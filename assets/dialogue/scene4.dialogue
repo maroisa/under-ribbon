@@ -1,0 +1,95 @@
+~ start
+do change_bg(BG.CLASS)
+Dua jam pelajaran pertama berlalu tanpa terasa. Bunyi nyaring bel sekolah kembali bergema di seluruh sudut koridor, menandakan jam istirahat pertama resmi dimulai. 
+
+Suasana kelas yang semula tenang seketika berubah riuh. Beberapa murid berhamburan keluar menuju kantin, sementara yang lain berkumpul di sudut ruangan untuk mengobrol.
+
+- Diam di kelas
+	do change_bg(BG.LOOKING)
+	
+	Kamu memilih untuk diam di bangku mu. Di tengah keriuhan teman-teman sekelas yang berbondong-bondong keluar ruangan menuju kantin, kamu menyandarkan punggung ke kursi dan menikmati suasana kelas yang perlahan berangsur tenang.
+	Alya yang melihatmu tetap bertahan di tempat duduk ikut mengurungkan niat untuk beranjak. Ia mengeluarkan sebuah kotak bekal kecil dari dalam tasnya, lalu menoleh padamu dengan senyum hangat.
+	
+	do change_bg(BG.CLASS)
+	
+	"Kamu tidak ke kantin?". "Untung saja ada kamu di sini, jadi aku tidak merasa sendirian di dalam kelas."
+	Alya menggeser sedikit kotak bekalnya ke arah tengah meja, memberikan isyarat ramah bahwa ia tidak keberatan berbagi denganamu.
+	
+	- Tolak
+		Kamu mengutarakan menolaknya secara halus dengan gestur tangan yang sopan.
+		"Oh begitu, tidak apa-apa," jawabnya dengan senyum hangat.
+		Alya mengangguk paham tanpa merasa tersinggung sama sekali. "Oh begitu, tidak apa-apa," jawabnya dengan senyum hangat.
+	
+	- Terima
+		Kamu menyunggingkan senyum tipis lalu mengangguk sopan. "Terima kasih banyak, Alya. Kalau begitu aku ambil satu ya."
+		Kamu mengambil sepotong roti lapis dengan cermat. Alya mengulas senyum ramah, merasa lega karena tawarannya diterima dengan baik.
+		"Sama-sama," balas Alya santun. "Bekal ini disiapkan dari rumah tadi pagi, semoga cocok di selera kamu."
+		Kalian berdua menikmati makanan masing-masing di tengah ruangan kelas ber-AC yang tenang, sesekali bertukar komentar singkat mengenai kesan pertama tentang sekolah ini tanpa terkesan terlalu mencampuri urusan pribadi.
+		BEEP... BEEP... BEEP... [br]Bel elektronik sekolah bergema halus di dalam kelas, menandakan durasi jam istirahat pertama telah usai. Pintu ruang kelas kembali terbuka dan satu per satu murid mulai berdatangan dari luar.[/br]
+		"Waktunya masuk pelajaran berikutnya," Alya merapikan kembali kotak bekalnya sembari mengeluarkan buku catatan baru dari tasnya. Kamu mengangguk setuju dan mulai menyiapkan alat tulismu di atas meja.
+
+
+- Pergi ke kantin sendiri
+	do change_bg(BG.CANTEEN)
+	Kamu beranjak dari tempat dudukmu untuk pergi ke kantin sendiri. Di sepanjang koridor, murid-murid berhamburan mengisi setiap sudut sekolah. Tanpa beban harus menjaga obrolan dengan orang lain, kamu melangkah santai menikmati kebebasan dan suasana baru di hari pertama ini.
+	Aroma gurih gorengan hangat, aroma mi kuah, serta manisnya es teh seketika menyambutmu begitu tiba di area kantin. Suasananya cukup riuh dengan antrean murid-murid yang sibuk memesan makanan. Kamu berhasil menembus kerumunan, memesan segelas minuman dingin dan camilan hangat, lalu berbalik mengedarkan pandangan mencari tempat untuk menikmati waktu istirahatmu.
+	
+	- Duduk sendiri
+		Kamu melangkah menuju salah satu meja kosong di sudut kafetaria dan duduk di sana untuk menyantap jajananmu dengan tenang. Sambil menyeruput minuman dingin dan menikmati camilan hangat, kamu mengedarkan pandangan mengamati murid-murid lain di sekelilingmu.
+		Di sekitarmu, terlihat berbagai dinamika murid baru.
+		ada kelompok yang bertukar nomor ponsel, beberapa siswa senior yang lalu-lalang, hingga fasilitas kafetaria yang tertata modern. Menikmati momen istirahat ini secara mandiri memberimu ruang untuk bernapas dan mengamati situasi di hari pertama.
+
+	- Kembali ke kelas
+		do change_bg(BG.SMILING)
+		Kamu memutuskan untuk kembali ke kelas, Alya tersenyum menyapamu.
+		Kamu membalas senyuman Alya dengan anggukan sopan, lalu menarik kursi dan duduk di bangkumu. Tanpa membuang waktu, kamu membuka ritsleting tas dan mengeluarkan buku tulis beserta alat tulis, lalu menatanya dengan rapi di atas meja.
+		Tak lama kemudian, jam istirahat berakhir dan persiapan pelajaran berikutnya dimulai.
+		BEEP... BEEP... BEEP... [br]Suara bel elektronik bernada lembut bergema di seluruh penjuru koridor dan kafetaria. Semua murid mulai bergegas kembali ke ruang kelas masing-masing.[/br]
+		
+	- Melihat sekitar sekolah
+		do change_bg(BG.LORONG)
+		Setelah merapikan sisa makanan dan membuang wadah minuman ke tempat sampah pemilahan di sudut kafetaria, kamu memilih untuk melangkah santai menyusuri koridor ketimbang bergesa-gesa kembali. Langkah kakimu bergema pelan di sepanjang lorong sekolah yang perlahan berangsur sepi.
+		Deretan jendela kaca besar di sepanjang koridor membiarkan sinar matahari siang masuk, menciptakan garis-garis cahaya hangat di atas lantai granit. Di tengah perjalanan kembali ke kelas, perhatianmu teralih pada papan informasi digital dan beberapa piala kejuaraan yang terpajang rapi di dalam lemari kaca koridor utama.
+
+
+- Ajak Alya ke kantin
+	Kamu menoleh ke arah Alya yang baru saja hendak merapikan barang-barangnya. "Alya, mau ke kantin bareng? Sekalian keliling sebentar buat lihat-lihat area sekolah," tawarmu dengan senyum ramah.
+	Alya sempat sedikit terkejut, namun senyum manis langsung mengembang di wajahnya. Ia mengangguk antusias lalu memasukkan kembali kotak bekalnya ke dalam tas. "Boleh banget! Aku juga belum terlalu tahu letak kantinnya, ayo!"
+	do change_bg(BG.LORONG)
+	Kalian berdua berjalan keluar kelas, menyusuri koridor sekolah yang dipenuhi lalu-lalang murid lain. Aroma gurih makanan hangat dari arah kantin mulai tercium begitu kalian mendekati area utama. Suasana kantin cukup ramai, tetapi antusiasme hari pertama sekolah membuat suasana terasa hidup.
+	do change_bg(BG.CANTEEN)
+	Alya mengedarkan pandangan ke sekeliling rak makanan dengan mata berbinar. "Wah, ramai juga ya. Kira-kira menu apa yang enak di sini?"
+	"Bagaimana kalau kita coba jajanan yang ramai diantre di stan sebelah sana? Kelihatannya enak," tawarmu sambil menunjuk ke salah satu stan makanan favorit di kantin.
+	Alya tersenyum dan mengangguk setuju. Kalian berdua bergerak mendekati antrean. Setelah menunggu sebentar, giliran kalian tiba di depan penjual. Kamu memesan makanan hangat dan minuman segar untuk dinikmati bersama di tengah suasana kantin yang riuh.
+	Saat pesanan selesai disiapkan, Alya mengeluarkan dompet kecil dari saku seragamnya. 
+	Alya: Terima kasih ya sudah diajak ke sini. Berapa bagianku? Biar aku ganti.
+	ucapnya ramah sambil bersiap mengambil uang.
+	
+	- Bayar punya Alya
+		do change_bg(BG.CANTEEN2)
+		Kamu menyunggingkan senyum tipis lalu melambaikan tangan pelan. "Tidak usah, biar aku yang bayar kali ini. Anggap saja salam kenal di hari pertama sekolah."
+		Alya sempat terkejut mendengar ucapanmu. Rona tipis muncul di pipinya sebelum senyum hangat dan jujur mengembang sempurna di wajahnya.
+		Alya: Wah, terima kasih banyak ya!
+		ucap Alya dengan nada tulus. Ia memasukkan kembali dompetnya ke dalam saku.
+		Alya: Kalau begitu, di kesempatan berikutnya giliran aku yang traktir kamu, janji ya.
+		
+	- Bayar sendiri
+		do change_bg(BG.CANTEEN2)
+		Kamu menyunggingkan senyum wajar lalu menyebutkan nominal harga makanannya. "total punya kamu jadi sekian. Kita bagi dua saja ya."
+		Alya mengangguk lega. Ia menyerahkan uang pas sesuai bagiannya dengan senyuman santai. "Terima kasih ya. Aku agak tidak enak kalau harus dibayari di hari pertama," terkekeh pelan sembari menerima kembalian. Sikap terus terangmu membuatnya merasa nyaman tanpa ada rasa sungkan atau canggung.
+		Kalian berdua berjalan membawa makanan dan minuman menuju salah satu meja kosong di tepi kantin. Setelah duduk, kalian mulai menikmati pesanan di tengah riuhnya suasana sekitar.
+
+	Kalian berdua mengambil tempat duduk di salah satu meja kantin yang terhindar dari keriuhan utama. Setelah meletakkan makanan dan minuman di atas meja, Alya menyeruput minumannya sejenak, lalu menatapmu dengan senyum ramah.
+	"Ngomong-ngomong... tadi pas sesi perkenalan di kelas, aku belum sempat dengar banyak cerita tentang kamu. Kalau di luar jam sekolah, biasanya kamu paling suka menghabiskan waktu buat apa?" tanya Alya antusias.
+	Ia menyimak dengan saksama, menunggu jawabanmu sembari menikmati makanan hangatnya.
+	
+	- Hobi
+		- Bermain game
+		- Mendengar musik
+		- Membaca
+		- Menulis
+	
+	- Kerja part-time
+
+do end()
+=> END
