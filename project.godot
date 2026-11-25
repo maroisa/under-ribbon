@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Under Ribbon"
+config/version="alpha3.0"
 run/main_scene="uid://bj3q781md30en"
 config/features=PackedStringArray("4.7", "Mobile")
 boot_splash/show_image=false

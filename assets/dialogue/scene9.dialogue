@@ -6,18 +6,73 @@ Beberapa murid mulai merapikan tas dan berpamitan. Alya yang duduk di sebelahmu 
 
 
 - Langsung pulang
+	do Transitioner.fade_only()
 	do play_text(0)
 	do Transitioner.fade_only()
-	do change_bg(BG.SMILE)
+	do change_bg(BG.SMILE_EVENING)
+	Alya mendongak dari tasnya dan menghentikan aktivitasnya sejenak. Ia membalas senyumanmu dengan ramah dan menganggukkan kepala. Kamu mengangguk pelan membalas ucapannya, lalu melangkah keluar meninggalkan ruang kelas yang mulai sepi.
 
 - Tetap di kelas
 	Kamu memilih untuk tetap duduk di bangkumu sejenak. 
-	do change_bg(BG.WAVING_HAIR)
+	do change_bg(BG.LOOKING_EVENING)
 	Kamu memilih untuk tetap duduk di bangkumu sejenak. Alya yang sedang mengancingkan tasnya menghentikan gerakannya sejenak, lalu menoleh padamu dengan senyuman hangat. Cahaya senja menyinari separuh wajahnya.
-
+	Kamu merespon dengan mengutarakan kesan positifmu terhadap suasana sekolah ini, lalu menanyakan bagaimana kesannya mengenai tugas kelompok yang baru saja kalian kerjakan bersama.
+	do change_bg(BG.WAVING_HAIR)
+	Alya tersenyum kecil sembari menyelipkan helai rambut ke belakang telinganya.
+	do Transitioner.fade_only()
+	do play_text(2)
+	do change_bg(BG.CLASS_EVENING)
+	do change_actor(BG.ACTOR_SEC)
+	do Transitioner.fade_only()
+	Alya: Terima kasih.
+	Alya mengulas senyum tulus, merasa dihargai.
+	do change_actor(null)
 
 - Jalan-jalan di lorong
+	do Transitioner.fade_only()
 	do play_text(1)
+	do change_bg(BG.CORRIDOR_EVENING)
+	do Transitioner.fade_only()
+	Lantai granit lorong sekolah memantulkan warna jingga keemasan dari langit senja di luar jendela besar. Suasana koridor yang tadinya ramai kini perlahan mulai melengang.
+	Sambil melangkah santai, kamu menceritakan kekagumanmu terhadap arsitektur serta suasana koridor sekolah yang terasa tenang di sore hari.
+	do change_bg(BG.LOOKUP)
+	Alya mengangguk setuju sembari mengedarkan pandangannya ke sekeliling lorong. "Benar, koridor di sini luas dan tenang sekali kalau sore begini. Rasanya sangat nyaman untuk berjalan santai setelah seharian fokus belajar."
+	Saat melewati beberapa ruangan berpanel kaca di sepanjang koridor, hal apa yang ingin kamu lakukan?
+	- Jalan-jalan di dalam sekolah
+		do Transitioner.fade_only()
+		do change_bg(BG.EKSKUL)
+		do play_text(3)
+		do Transitioner.fade_only()
+		Alya mengamati deretan logo klub yang terpajang rapi di layar digital.
+		do change_bg(BG.CORRIDOR_EVENING)
+		do change_actor(BG.ACTOR_NANI)
+		Alya: Pilihannya banyak sekali dan semuanya terlihat dikelola dengan profesional.
+		komentar Alya sembari mengusap layar untuk melihat rincian kegiatan. 
+		Alya: Aku masih mempertimbangkan beberapa klub akademik dan literasi. Kalau kamu sendiri bagaimana?
+		do Transitioner.fade_only()
+		do change_actor(null)
+		do play_text(4)
+		do Transitioner.fade_only()
+		do change_bg(BG.LOOKUP2)
+		Alya mengangguk-angguk paham, menyimak tanggapanmu dengan penuh rasa hormat. "Penjelasan yang sangat masuk akal. Terima kasih sudut pandangnya."
+
+	- Jalan-jalan di luar sekolah
+		do Transitioner.fade_only()
+		do change_bg(BG.LIBRARY3)
+		do play_text(5)
+		do Transitioner.fade_only()
+		Alya ikut menoleh ke dalam ruangan perpustakaan yang diterangi lampu temaram hangat. Matanya berbinar penuh ketertarikan.
+		do change_bg(BG.LIBRARY2)
+		do change_actor(BG.ACTOR_SEC)
+		Alya: Wah, tempatnya luas sekali.
+		Alya: Suasanya sepertinya sangat mendukung untuk membaca atau menyelesaikan tugas dengan tenang. Suatu saat kita harus mencoba belajar di sana.
+		
+		do Transitioner.fade_only()
+		do change_actor(null)
+		do change_bg(BG.LIBRARY)
+		do play_text(6)
+		do Transitioner.fade_only()
+		Alya tersenyum hangat, mengapresiasi kesamaan pandangan di antara kalian mengenai suasana belajar yang ideal.
 
 do end()
 => END
