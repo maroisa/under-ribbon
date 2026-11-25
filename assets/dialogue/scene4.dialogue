@@ -85,11 +85,15 @@ Suasana kelas yang semula tenang seketika berubah riuh. Beberapa murid berhambur
 	
 	- Hobi
 		- Bermain game
+			do end(1)
 		- Mendengar musik
+			do end(2)
 		- Membaca
+			do end(3)
 		- Menulis
+			do end(4)
 	
 	- Kerja part-time
 
-do end()
+do end(0)
 => END

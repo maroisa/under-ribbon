@@ -1,9 +1,12 @@
 extends Node
 
+@onready var next_scene = preload("res://scenes/scene3.tscn")
+
 var texts = [
 	"Satu per satu murid mulai dipanggil ke depan kelas. Suasana ruangan mendadak hening dipenuhi rasa penasaran setiap kali seseorang melangkah maju, hingga akhirnya wali kelas membaca nama yang tercantum di daftar hadir berikutnya.",
 	"\"Selanjutnya, Alya Kirana.\""
 ]
+
 
 func _ready() -> void:
 	$Label.text = ""
@@ -21,4 +24,4 @@ func _ready() -> void:
 		
 		await get_tree().create_timer(1).timeout
 	
-	Transitioner.fade_to("res://scenes/scene3.tscn")
+	Transitioner.fade_to(next_scene)

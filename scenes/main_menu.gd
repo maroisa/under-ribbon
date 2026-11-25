@@ -1,5 +1,6 @@
 extends Control
 
+@onready var next_scene = preload("res://scenes/scene1.tscn")
 
 func _ready() -> void:
 	$BG/M/MainTab.show()
@@ -19,7 +20,7 @@ func _ready() -> void:
 		$BG/M/SettingsTab.show())
 	
 	$BG/M/MainTab/C/VB/StartButton.pressed.connect(func():
-		Transitioner.fade_to("res://scenes/scene1.tscn"))
+		Transitioner.fade_to(next_scene))
 	
 	$BG/M/SettingsTab/BackButton.pressed.connect(func():
 		$BG/M/MainTab.show()

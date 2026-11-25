@@ -1,8 +1,11 @@
 extends CanvasLayer
 
+@onready var next_scene = preload("res://scenes/scene4.tscn")
+
 var dialogue = preload("res://assets/dialogue/scene3.dialogue")
 
 signal on_submitted
+
 
 func _ready() -> void:
 	$BG.hide()
@@ -27,4 +30,4 @@ func submit_modal(new_text: String):
 	on_submitted.emit()
 
 func end():
-	Transitioner.fade_to("res://scenes/scene4.tscn")
+	Transitioner.fade_to(next_scene)

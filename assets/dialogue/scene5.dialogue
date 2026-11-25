@@ -1,7 +1,41 @@
 ~ start
-do change_bg(BG.CLASS)
 
-Suara bel elektronik bernada lembut bergema di seluruh penjuru koridor dan kafetaria. Semua murid mulai bergegas kembali ke ruang kelas masing-masing.
+~ bermain
+do play_text()
+do change_bg(BG.CANTEEN)
+do Transitioner.fade_only()
+Alya menaikkan alisnya sedikit, lalu mengangguk paham. "Begitu ya. Beberapa sepupuku juga suka bermain game kalau ada waktu luang. Kamu biasanya suka genre game yang seperti apa?"
+do Transitioner.fade_only()
+do play_text2()
+do end()
+=> END
 
+~ musik
+do play_text()
+do change_bg(BG.CANTEEN)
+do Transitioner.fade_only()
+Alya merespon dengan anggukan halus. "Musik memang cara yang bagus untuk menjaga fokus atau sekadar rileks. Genre musik apa yang biasanya kamu dengarkan?"
+do Transitioner.fade_only()
+do play_text2()
+do end()
+=> END
+
+~ membaca
+do play_text()
+do change_bg(BG.CANTEEN)
+do Transitioner.fade_only()
+Alya tampak tertarik, senyumnya terkembang sedikit lebih lebar. "Sama seperti yang kusebutkan saat perkenalan di kelas tadi. Boleh tahu jenis buku atau genre apa yang biasanya paling kamu suka?"
+do Transitioner.fade_only()
+do play_text2()
+do end()
+=> END
+
+~ menulis
+do play_text()
+do change_bg(BG.CANTEEN)
+do Transitioner.fade_only()
+Alya menatapmu dengan binar tertarik. "Menulis cerita? Itu hobi yang membutuhkan kreativitas tinggi. Tidak semua orang punya ketelatenan untuk itu."
+do Transitioner.fade_only()
+do play_text2()
 do end()
 => END
