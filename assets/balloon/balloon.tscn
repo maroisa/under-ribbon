@@ -151,6 +151,24 @@ theme = SubResource("Theme_qq3yp")
 expand_mode = 2
 stretch_mode = 4
 
+[node name="M" type="MarginContainer" parent="Balloon" unique_id=503661928]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="Actor" type="TextureRect" parent="Balloon/M" unique_id=1241364370]
+unique_name_in_owner = true
+layout_mode = 2
+expand_mode = 2
+stretch_mode = 5
+
 [node name="VB" type="VBoxContainer" parent="Balloon" unique_id=132349105]
 layout_mode = 1
 anchors_preset = 12

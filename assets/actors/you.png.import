@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cntemg36y5m4r"
-path="res://.godot/imported/lorong.jpg-eca773148aa9fe02f3d488f6c84efd89.ctex"
+uid="uid://buavkrkodf5ir"
+path="res://.godot/imported/you.png-1f172ad439fa1712bc5731661e90d639.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/backgrounds/lorong.jpg"
-dest_files=["res://.godot/imported/lorong.jpg-eca773148aa9fe02f3d488f6c84efd89.ctex"]
+source_file="res://assets/actors/you.png"
+dest_files=["res://.godot/imported/you.png-1f172ad439fa1712bc5731661e90d639.ctex"]
 
 [params]
 

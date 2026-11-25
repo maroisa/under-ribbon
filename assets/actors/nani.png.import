@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ceqmxpiuvipq7"
-path="res://.godot/imported/Dingin tetapi tidak kejam.jpeg-f0b956f74d482e9fd376cb733d4b119d.ctex"
+uid="uid://cbt618c8dn3cp"
+path="res://.godot/imported/nani.png-3e33508ebe81d51b6d37fb43cc4e0ce7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/backgrounds/Dingin tetapi tidak kejam.jpeg"
-dest_files=["res://.godot/imported/Dingin tetapi tidak kejam.jpeg-f0b956f74d482e9fd376cb733d4b119d.ctex"]
+source_file="res://assets/actors/nani.png"
+dest_files=["res://.godot/imported/nani.png-3e33508ebe81d51b6d37fb43cc4e0ce7.ctex"]
 
 [params]
 

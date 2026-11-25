@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bysqh5dp4puaa"
-path="res://.godot/imported/smiling.jpg-59106fecdb9ae5814418b7fa8ca607ad.ctex"
+uid="uid://dp0dfiwg87738"
+path="res://.godot/imported/corridor2.jpg-976ff2553305ca3036d3ace404e90cf2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/backgrounds/smiling.jpg"
-dest_files=["res://.godot/imported/smiling.jpg-59106fecdb9ae5814418b7fa8ca607ad.ctex"]
+source_file="res://assets/backgrounds/corridor2.jpg"
+dest_files=["res://.godot/imported/corridor2.jpg-976ff2553305ca3036d3ace404e90cf2.ctex"]
 
 [params]
 

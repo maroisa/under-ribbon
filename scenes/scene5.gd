@@ -16,10 +16,16 @@ const choice_text2 = [
 	"Ia mengapresiasi hobimu dengan nada jujur dan santun, menghargai bakat teman barunya."
 ]
 
+
+const choices = [ "bermain", "musik", "membaca", "menulis", "kerja" ]
+
 var dialogue = preload("res://assets/dialogue/scene5.dialogue")
 
 func _ready() -> void:
-	DialogueManager.show_dialogue_balloon(dialogue)
+	$Label.text = ""
+	$Label.visible_characters = 0
+
+	DialogueManager.show_dialogue_balloon(dialogue, choices[GameManager.hobby_choice])
 
 func end():
 	Transitioner.fade_to(next_scene)
@@ -56,3 +62,62 @@ func play_text2() -> void:
 		await get_tree().create_timer(0.01).timeout
 	
 	await get_tree().create_timer(1).timeout
+	$Label.text = ""
+	$Label.visible_characters = 0
+
+func play_text_kerja() -> void:
+	var text = "Ia menanyakan sedikit tentang bidang yang kamu jalani tanpa terkesan terlalu mencampuri urusan pribadi, menunjukkan kesopanan khas murid baru."
+	
+	$Label.text = ""
+	$Label.visible_characters = 0
+	
+	var text_length = 0
+	
+	$Label.visible_characters = 0
+	$Label.text = text
+	text_length = text.length()
+	while $Label.visible_characters < text_length:
+		$Label.visible_characters += 1
+		await get_tree().create_timer(0.01).timeout
+	
+	await get_tree().create_timer(1).timeout
+	$Label.text = ""
+	$Label.visible_characters = 0
+
+func play_obrolan_singkat() -> void:
+	var text = "Obrolan singkat di meja kafe sekolah berjalan dengan tenang dan tertata. Meskipun ini adalah hari pertama dan kalian belum saling mengenal sebelumnya, sikap saling menghargai membuat rasa canggung perlahan mencair."
+	
+	$Label.text = ""
+	$Label.visible_characters = 0
+	
+	var text_length = 0
+	
+	$Label.visible_characters = 0
+	$Label.text = text
+	text_length = text.length()
+	while $Label.visible_characters < text_length:
+		$Label.visible_characters += 1
+		await get_tree().create_timer(0.01).timeout
+	
+	await get_tree().create_timer(1).timeout
+	$Label.text = ""
+	$Label.visible_characters = 0
+
+func play_obrolan_singkat2() -> void:
+	var text = "Kamu mengangguk pelan, menyetujui bahwa beradaptasi di sekolah baru memang membutuhkan waktu."
+	
+	$Label.text = ""
+	$Label.visible_characters = 0
+	
+	var text_length = 0
+	
+	$Label.visible_characters = 0
+	$Label.text = text
+	text_length = text.length()
+	while $Label.visible_characters < text_length:
+		$Label.visible_characters += 1
+		await get_tree().create_timer(0.01).timeout
+	
+	await get_tree().create_timer(1).timeout
+	$Label.text = ""
+	$Label.visible_characters = 0

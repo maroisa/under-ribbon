@@ -8,11 +8,5 @@ func _ready() -> void:
 	DialogueManager.show_dialogue_balloon(dialogue)
 
 func end(choice: int):
-	if choice == 0:
-		print("SKIP!")
-		GameManager.hobby_choice = 0
-		Transitioner.fade_to(next_scene)
-	
-	GameManager.hobby_choice = choice - 1
-	
+	GameManager.hobby_choice = choice
 	Transitioner.fade_to(next_scene)

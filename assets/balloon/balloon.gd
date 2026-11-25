@@ -217,4 +217,7 @@ func _on_responses_menu_response_selected(response: DialogueResponse) -> void:
 func change_bg(bg: Texture2D):
 	$Balloon.texture = bg
 
+func change_actor(actor: Texture2D):
+	$%Actor.texture = actor
+
 #endregion

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bml8meajxihjd"
-path="res://.godot/imported/class2.jpg-f6bed738676dc1461ccab4503eee8de2.ctex"
+uid="uid://dbd3hoy44duef"
+path="res://.godot/imported/baka.png-9566db10b4a465f09940ee3d7f785810.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/backgrounds/class2.jpg"
-dest_files=["res://.godot/imported/class2.jpg-f6bed738676dc1461ccab4503eee8de2.ctex"]
+source_file="res://assets/actors/baka.png"
+dest_files=["res://.godot/imported/baka.png-9566db10b4a465f09940ee3d7f785810.ctex"]
 
 [params]
 

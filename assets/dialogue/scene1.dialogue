@@ -21,15 +21,19 @@ Jantungmu berdegup sedikit lebih cepat ketika menyadari betapa dekatnya posisi d
 	Gadis berambut panjang itu sempat melirikmu sekilas, lalu kembali menekuni buku catatan di atas mejanya tanpa mengucap sepatah kata pun.
 
 - Sapa Dia
-	do change_bg(BG.SMILING)
+	do change_bg(BG.SMILE)
 	Memberanikan diri, kamu membuang rasa gugup dan melontarkan sapaan ramah pada gadis berambut panjang di sebelahmu. 
 	Ketika [b]kamu menyapa dia, dia tersenyum melihatmu[/b] dengan kehangatan yang seketika mencairkan suasana canggung di antara kalian. Ia menghentikan kegiatannya merapikan alat tulis, lalu menoleh penuh ke arahmu.
+	do change_bg(BG.CLASS_BLUR)
+	do change_actor(BG.ACTOR_HI)
 	Alya: "Hai juga! Aku Alya," jawabnya manis dengan binar mata yang ramah.
+	do change_bg(BG.LOOKING_BLUR)
+	do change_actor(null)
 
 - Diam Saja
 	Kamu memilih untuk diam saja. Tanpa mampu berkata-kata, kamu terdiam terpesona olehnya, terpaku sejenak memandangi parasnya yang begitu anggun disiram cahaya pagi.
 	Ketika menyadari tatapanmu yang tak bergeming, dia melihatmu, membuat jantungmu berdegup kian kencang. Momen tenang itu terasa berlalu begitu cepat.
-	do change_bg(BG.OPENING)
+	do change_bg(BG.SEARCING)
 	Gadis itu kembali melanjutkan kegiatannya merapikan alat tulis dengan sedikit anggukan ramah, sementara kamu berusaha keras mengendalikan rasa canggung dan menetralkan detak dadamu.
 
 do change_bg(BG.CLASS)

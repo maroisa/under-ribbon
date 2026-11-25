@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bj3q781md30en"]
 
 [ext_resource type="Script" uid="uid://duis030xvuoa3" path="res://scenes/main_menu.gd" id="1_ekxnf"]
-[ext_resource type="Texture2D" uid="uid://t5t0coswx54h" path="res://assets/backgrounds/class.jpg" id="1_l6cm7"]
+[ext_resource type="Texture2D" uid="uid://cxoy373184fkr" path="res://assets/backgrounds/class.jpg" id="1_l6cm7"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l6cm7"]
 content_margin_left = 10.0

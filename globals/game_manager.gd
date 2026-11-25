@@ -2,4 +2,4 @@ extends Node
 
 var username: String = "Budi"
 
-var hobby_choice: int = 0
+var hobby_choice: int = 4

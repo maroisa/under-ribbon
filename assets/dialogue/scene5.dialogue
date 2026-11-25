@@ -1,5 +1,15 @@
 ~ start
 
+~ kerja
+do change_bg(BG.CANTEEN)
+Kamu meletakkan gelasmu lalu menjawab singkat. "Di luar jam sekolah, aku biasanya mengisi waktu dengan kerja part-time atau proyek sampingan. Mencoba belajar mandiri."
+do change_actor(BG.ACTOR_WORRIED)
+Alya tampak sedikit terkejut, namun matanya memancarkan rasa hormat. "Oh, ya? Di hari pertama sekolah saja kamu sudah punya kesibukan mandiri. Itu cukup mengagumkan."
+do change_actor(null)
+do Transitioner.fade_only()
+do play_text_kerja()
+=> obrolan_singkat
+
 ~ bermain
 do play_text()
 do change_bg(BG.CANTEEN)
@@ -8,7 +18,7 @@ Alya menaikkan alisnya sedikit, lalu mengangguk paham. "Begitu ya. Beberapa sepu
 do Transitioner.fade_only()
 do play_text2()
 do end()
-=> END
+=> obrolan_singkat
 
 ~ musik
 do play_text()
@@ -18,7 +28,7 @@ Alya merespon dengan anggukan halus. "Musik memang cara yang bagus untuk menjaga
 do Transitioner.fade_only()
 do play_text2()
 do end()
-=> END
+=> obrolan_singkat
 
 ~ membaca
 do play_text()
@@ -28,7 +38,7 @@ Alya tampak tertarik, senyumnya terkembang sedikit lebih lebar. "Sama seperti ya
 do Transitioner.fade_only()
 do play_text2()
 do end()
-=> END
+=> obrolan_singkat
 
 ~ menulis
 do play_text()
@@ -37,5 +47,24 @@ do Transitioner.fade_only()
 Alya menatapmu dengan binar tertarik. "Menulis cerita? Itu hobi yang membutuhkan kreativitas tinggi. Tidak semua orang punya ketelatenan untuk itu."
 do Transitioner.fade_only()
 do play_text2()
+=> obrolan_singkat
+
+~ obrolan_singkat
+do Transitioner.fade_only()
+do change_bg(BG.CANTEEN_BLUR)
+do change_actor(BG.ACTOR_SMILING)
+do play_obrolan_singkat()
+do Transitioner.fade_only()
+Alya merapikan tempat makan dan minumnya dengan rapi. 
+Alya: Terima kasih sudah mengajak ke kantin tadi. Jujur, di hari pertama seperti ini, lingkungan sekolah ini rasanya masih sangat asing buatku.
+do Transitioner.fade_only()
+do play_obrolan_singkat2()
+do Transitioner.fade_only()
+do change_actor(BG.ACTOR_BASE)
+Alya: Sepertinya jam istirahat sudah selesai. Kita sebaiknya kembali ke ruang kelas sebelum guru mata pelajaran berikutnya masuk.
+do change_actor(null)
+do change_bg(BG.CORRIDOR)
+Kalian berdua berjalan beriringan melintasi koridor berlantai granit yang bersih dan sejuk ber-AC menuju ruang kelas.
+
 do end()
 => END
