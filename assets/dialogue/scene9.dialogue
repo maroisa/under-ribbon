@@ -1,0 +1,23 @@
+~ start
+do change_bg(BG.CLASS_EVENING)
+
+Sinar matahari senja berwarna jingga keemasan mulai menerobos masuk melalui jendela kaca kelas, membiaskan cahaya hangat di atas meja-meja yang rapi.
+Beberapa murid mulai merapikan tas dan berpamitan. Alya yang duduk di sebelahmu juga tampak memasukkan buku catatan dan tabletnya ke dalam tas dengan tenang.
+
+
+- Langsung pulang
+	do play_text(0)
+	do Transitioner.fade_only()
+	do change_bg(BG.SMILE)
+
+- Tetap di kelas
+	Kamu memilih untuk tetap duduk di bangkumu sejenak. 
+	do change_bg(BG.WAVING_HAIR)
+	Kamu memilih untuk tetap duduk di bangkumu sejenak. Alya yang sedang mengancingkan tasnya menghentikan gerakannya sejenak, lalu menoleh padamu dengan senyuman hangat. Cahaya senja menyinari separuh wajahnya.
+
+
+- Jalan-jalan di lorong
+	do play_text(1)
+
+do end()
+=> END

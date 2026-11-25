@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://wy22g77ailqg"]
+
+[ext_resource type="Script" uid="uid://yjqyert57nb5" path="res://scenes/scene8.gd" id="1_8b7fd"]
+
+[node name="Scene8" type="ColorRect" unique_id=797578298]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.08627451, 0.08627451, 0.08627451, 1)
+script = ExtResource("1_8b7fd")
+
+[node name="Label" type="Label" parent="." unique_id=573758595]
+custom_maximum_size = Vector2(800, 600)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+text = "Lorem Ipsum Dolor Sit Amet"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2

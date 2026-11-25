@@ -1,0 +1,33 @@
+~ start
+do change_bg(BG.CLASS)
+Guru pengajar di depan kelas menepuk tangannya pelan untuk menarik perhatian seluruh siswa. "Baiklah semuanya, untuk memperdalam materi hari ini, saya menugaskan kalian membuat proyek ringkas secara berpasangan."
+
+do change_bg(BG.EXCITED)
+Mendengar pengumuman itu, Alya menoleh ke arahmu dengan senyum tipis yang sopan. "Sepertinya kita sekelompok. Mohon kerja samanya ya." Bagaimana caramu merespon dan memulai diskusi tugas kelompok ini dengannya?
+- Diskusi pembagian kelompok
+	do change_bg(BG.CLASS)
+	Kamu membalas anggukannya dengan senyuman santun. Kamu menyampaikan bahwa kamu juga berharap dapat bekerja sama dengan baik, lalu mengusulkan untuk langsung membagi poin-poin materi agar pengerjaannya bisa berjalan lebih efisien. 
+	do change_bg(BG.EXCITED2)
+	Alya tampak mengapresiasi inisiatifmu yang cepat dan terstruktur. Ia membuka catatan digital di tabletnya dan mengangguk pelan. 
+	do change_bg(BG.EXCITED3)
+	Alya: Setuju. Langkah awal yang bagus. Mari kita bagi bagian pengerjaannya.
+
+- Baca detail instruksi tugas
+	do change_bg(BG.CLASS)
+	Kamu mengangguk sopan pada Alya, menyetujui kerja sama tersebut. Kamu kemudian mengutarakan keinginan untuk membaca dan memahami detail instruksi pada lembar kerja terlebih dahulu agar tidak ada poin penting yang terlewat.
+	do change_bg(BG.CLASS_BLUR)
+	do change_actor(BG.ACTOR_SEC)
+	Alya menyunggingkan senyum mengerti. "Tentu, silakan. Aku juga akan memeriksa poin-poin ketentuannya terlebih dahulu."
+	do change_bg(BG.EXCITED2)
+	do change_actor(null)
+	Kalian berdua fokus meneliti lembar tugas selama beberapa saat sebelum mulai mencatat poin-poin penting secara cermat.
+
+do change_bg(BG.CLASS)
+Kerja sama kelompok di antara kalian berjalan dengan sangat baik dan profesional. Masing-masing dari kalian saling melengkapi dan menghargai pendapat satu sama lain.
+Meskipun baru pertama kali mengerjakan tugas bersama di hari pertama sekolah ini, ritme kerja yang kalian bangun terasa sangat serasi. Tugas kelompok tersebut berhasil diselesaikan dengan baik tepat sebelum jam pelajaran berakhir.
+do change_bg(BG.PREPARE)
+Alya merapikan kembali tablet dan alat tulisnya dengan senyum puas. 
+Alya: Terima kasih atas kerja samanya hari ini. Kamu sangat membantu.
+
+do end()
+=> END

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://wam300rwlp2k"
+path="res://.godot/imported/scene9.dialogue-4bf84feb4e23feefa32d0b2b1f56f143.tres"
+
+[deps]
+
+source_file="res://assets/dialogue/scene9.dialogue"
+dest_files=["res://.godot/imported/scene9.dialogue-4bf84feb4e23feefa32d0b2b1f56f143.tres"]
+
+[params]
+
+defaults=true
